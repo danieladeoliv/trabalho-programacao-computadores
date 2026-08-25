@@ -1,41 +1,29 @@
-Ir para o conteúdo
-danieladeoliv
-trabalho-programacao-computadores
-Repository navigation
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security and quality
-Insights
-Settings
-Upload de arquivos para trabalho-programação-computadores
-Migalhas dexitrabalho-programação-computadores/
-Carregar arquivos
-Arraste os arquivos para cá para adicioná-los ao seu repositório.
-Ou Nenhum arquivo escolhido
-@danieladeoliv
-Confirmar alterações
-Resumo do commit
-Adicionar arquivos por meio de upload
-Descrição opcional
-Adicione uma descrição opcional…
+import java.util.Scanner;
 
- Comprometa-se diretamente com oprincipalfilial.
- Crie uma nova branch para este commit e inicie um pull request. Saiba mais sobre solicitações pull.
- 
-Rodapé
-© 2026 GitHub, Inc.
-Navegação do
-Termos
-Ê
-Segurança
-Status
-Comunidade
-Documentos
-Contato
-Gerenciar cookies
-Não compartilhe minhas informações pessoais.
- 
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitando os dados do aluno
+        System.out.print("Digite o nome do aluno: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Digite a idade: ");
+        int idade = scanner.nextInt();
+        scanner.nextLine(); // Limpar o buffer do teclado
+
+        System.out.print("Digite o curso: ");
+        String curso = scanner.nextLine();
+
+        System.out.print("Digite o período: ");
+        int periodo = scanner.nextInt();
+
+        // Apresentando os dados no formato solicitado
+        System.out.println("\nAluno: " + nome);
+        System.out.println("Idade: " + idade + " anos");
+        System.out.println("Curso: " + curso);
+        System.out.println("Período: " + periodo);
+
+        scanner.close();
+    }
+}
